@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friendly User | Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Friendly User</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="programs.html">Programs</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="coaches.html">Coaches</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <div>
+        <p class="eyebrow">Page 5</p>
+        <h1>Contact & Registration</h1>
+        <p>Send a message to ask about online or face-to-face training.</p>
+      </div>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-panel">
+        <h2>Visit or message us</h2>
+        <p><strong>Location:</strong> Community Sports Court</p>
+        <p><strong>Email:</strong> hello@friendlyuser.example</p>
+        <p><strong>Phone:</strong> 0912-345-6789</p>
+        <p><strong>Modes:</strong> Online coaching and face-to-face training</p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="program">Program Interest</label>
+        <select id="program" name="program" required>
+          <option value="">Choose a program</option>
+          <option>Basketball Basics</option>
+          <option>Strength & Conditioning</option>
+          <option>Online Coaching</option>
+          <option>Weekend League Prep</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+        <button class="button primary" type="submit">Send Message</button>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>(c) 2026 Friendly User. School project website.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
